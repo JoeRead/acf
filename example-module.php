@@ -12,6 +12,8 @@
 
 // This section turns your ACF value into a string - this makes it easier to manipuulate and display as you create your module.
 // Update this using the values above
+// If you are using flexible content, you will use get_sub_field (example below).
+// If you are uusing get_template_part, you will need to change this to get_field
 
 $heading = get_sub_field('example_heading');
 $content = get_sub_field('example_content');
