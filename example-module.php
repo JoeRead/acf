@@ -15,7 +15,7 @@
 
 $heading = get_sub_field('example_heading');
 $content = get_sub_field('example_content');
-$img1 = get_sub_field('sexample_image1');
+$img1 = get_sub_field('example_image1');
   $img1_url = $img1['url'];
   $img1_alt = $img1['alt'];
 
@@ -25,7 +25,10 @@ $img1 = get_sub_field('sexample_image1');
 <div id="my-example-row" class="flr100">
   <div class="container">
   <h1><?php echo $heading; ?></h1>
-  <h1><?php echo $heading; ?></h1>
+  <div class="content-section">
+     <img src="<?php echo $img1_url; ?>" alt="<?php echo $img1_alt; ?>" />
+     <?php echo $content; ?>
+  </div>
   </div>
 </div>
 
