@@ -9,7 +9,7 @@
 
 	// Listing out all the layouts that are being used
 	$exampleelement = 'example-element';
-	$otherelement = 'featured-products';
+	$otherelement = 'other-element';
 
 	// Check if the flexible content field has rows of data
 	if( have_rows($flex) ) :
