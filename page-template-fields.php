@@ -5,6 +5,9 @@
  * @package understrap
  */
 
+//Define Page Template Specific ACF Fields Here
+$examplefieldname = get_field('example_field_name');
+
 get_header();
 
 ?>
@@ -18,22 +21,13 @@ get_header();
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
-					<?php the_title() ?>
-					
+					<h1><?php the_title() ?></h1>
+					<p><?php echo $examplefieldname; ?></p>
 
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
 
-
-						<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-
-							comments_template();
-
-						endif;
-						?>
 
 					<?php endwhile; // end of the loop. ?>
 
