@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: [template name]
+ * Template Name: YOUR PAGE TEMPLATE NAME
  *
  * @package understrap
  */
