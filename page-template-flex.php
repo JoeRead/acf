@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Modular Page Template
+ * Template Name: YOUR PAGE TEMPLATE NAME
  *
  * Modular Page Template
  *
